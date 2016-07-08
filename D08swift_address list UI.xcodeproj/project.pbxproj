@@ -15,6 +15,11 @@
 		5121B4D91D2C860B00118C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5121B4D71D2C860B00118C39 /* LaunchScreen.storyboard */; };
 		5121B4E41D2C860B00118C39 /* D08swift_address_list_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5121B4E31D2C860B00118C39 /* D08swift_address_list_UITests.swift */; };
 		5121B4EF1D2C860B00118C39 /* D08swift_address_list_UIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5121B4EE1D2C860B00118C39 /* D08swift_address_list_UIUITests.swift */; };
+		5121B5A71D2CB22A00118C39 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 5121B5A61D2CB22A00118C39 /* data.db */; };
+		5121B5AC1D2CB23000118C39 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5121B5A91D2CB23000118C39 /* SQLiteDB.swift */; };
+		5121B5AD1D2CB23000118C39 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5121B5AA1D2CB23000118C39 /* SQLTable.swift */; };
+		5121B5AE1D2CB23000118C39 /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5121B5AB1D2CB23000118C39 /* String-Extras.swift */; };
+		5121B5B01D2CB24800118C39 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5121B5AF1D2CB24800118C39 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,12 @@
 		5121B4EA1D2C860B00118C39 /* D08swift_address list UIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "D08swift_address list UIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5121B4EE1D2C860B00118C39 /* D08swift_address_list_UIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D08swift_address_list_UIUITests.swift; sourceTree = "<group>"; };
 		5121B4F01D2C860B00118C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5121B5071D2C9A4A00118C39 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		5121B5A61D2CB22A00118C39 /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.db; sourceTree = "<group>"; };
+		5121B5A91D2CB23000118C39 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		5121B5AA1D2CB23000118C39 /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
+		5121B5AB1D2CB23000118C39 /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
+		5121B5AF1D2CB24800118C39 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5121B5B01D2CB24800118C39 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +91,9 @@
 		5121B4BF1D2C860B00118C39 = {
 			isa = PBXGroup;
 			children = (
+				5121B5AF1D2CB24800118C39 /* libsqlite3.0.tbd */,
+				5121B5A61D2CB22A00118C39 /* data.db */,
+				5121B5A81D2CB23000118C39 /* SQLiteDB */,
 				5121B4CA1D2C860B00118C39 /* D08swift_address list UI */,
 				5121B4E21D2C860B00118C39 /* D08swift_address list UITests */,
 				5121B4ED1D2C860B00118C39 /* D08swift_address list UIUITests */,
@@ -100,8 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				5121B4CB1D2C860B00118C39 /* AppDelegate.swift */,
-				5121B4CD1D2C860B00118C39 /* ViewController.swift */,
+				5121B5071D2C9A4A00118C39 /* Header.h */,
 				5121B4CF1D2C860B00118C39 /* Main.storyboard */,
+				5121B4CD1D2C860B00118C39 /* ViewController.swift */,
 				5121B4D51D2C860B00118C39 /* Assets.xcassets */,
 				5121B4D71D2C860B00118C39 /* LaunchScreen.storyboard */,
 				5121B4DA1D2C860B00118C39 /* Info.plist */,
@@ -126,6 +142,16 @@
 				5121B4F01D2C860B00118C39 /* Info.plist */,
 			);
 			path = "D08swift_address list UIUITests";
+			sourceTree = "<group>";
+		};
+		5121B5A81D2CB23000118C39 /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				5121B5A91D2CB23000118C39 /* SQLiteDB.swift */,
+				5121B5AA1D2CB23000118C39 /* SQLTable.swift */,
+				5121B5AB1D2CB23000118C39 /* String-Extras.swift */,
+			);
+			path = SQLiteDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5121B4D91D2C860B00118C39 /* LaunchScreen.storyboard in Resources */,
+				5121B5A71D2CB22A00118C39 /* data.db in Resources */,
 				5121B4D61D2C860B00118C39 /* Assets.xcassets in Resources */,
 				5121B4D11D2C860B00118C39 /* Main.storyboard in Resources */,
 			);
@@ -260,8 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5121B4D41D2C860B00118C39 /* D08swift_address_list_UI.xcdatamodeld in Sources */,
+				5121B5AE1D2CB23000118C39 /* String-Extras.swift in Sources */,
+				5121B5AC1D2CB23000118C39 /* SQLiteDB.swift in Sources */,
 				5121B4CE1D2C860B00118C39 /* ViewController.swift in Sources */,
 				5121B4CC1D2C860B00118C39 /* AppDelegate.swift in Sources */,
+				5121B5AD1D2CB23000118C39 /* SQLTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +439,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "spider.D08swift-address-list-UI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/20141105043dj/Desktop/D08swift_address list UI/D08swift_address list UI/Header.h";
 			};
 			name = Debug;
 		};
@@ -420,6 +451,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "spider.D08swift-address-list-UI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/20141105043dj/Desktop/D08swift_address list UI/D08swift_address list UI/Header.h";
 			};
 			name = Release;
 		};
@@ -488,6 +520,7 @@
 				5121B4F51D2C860B00118C39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5121B4F61D2C860B00118C39 /* Build configuration list for PBXNativeTarget "D08swift_address list UITests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +529,7 @@
 				5121B4F81D2C860B00118C39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5121B4F91D2C860B00118C39 /* Build configuration list for PBXNativeTarget "D08swift_address list UIUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +538,7 @@
 				5121B4FB1D2C860B00118C39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
