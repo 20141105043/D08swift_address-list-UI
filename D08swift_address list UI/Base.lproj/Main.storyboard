@@ -41,7 +41,7 @@
                                             <rect key="frame" x="67" y="147" width="186" height="64"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                            <state key="normal" title="呵呵通讯录系统"/>
+                                            <state key="normal" title="进入通讯录系统"/>
                                             <connections>
                                                 <action selector="enterSystem:" destination="TAg-md-7Xj" eventType="touchUpInside" id="E6f-WT-xNR"/>
                                                 <segue destination="BYZ-38-t0r" kind="modal" id="Ce2-Bx-N65"/>
@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uXb-ir-nmx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-245" y="406"/>
+            <point key="canvasLocation" x="-243" y="1035"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -75,7 +75,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EmK-3m-dgD">
-                                            <rect key="frame" x="105" y="184" width="110" height="30"/>
+                                            <rect key="frame" x="105" y="163" width="110" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                             <state key="normal" title="删除联系人"/>
@@ -84,7 +84,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Goa-UZ-jRz">
-                                            <rect key="frame" x="102" y="112" width="117" height="30"/>
+                                            <rect key="frame" x="102" y="103" width="117" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                             <state key="normal" title="查找联系人"/>
@@ -110,13 +110,27 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kRt-78-F1p">
-                                            <rect key="frame" x="81" y="259" width="159" height="30"/>
+                                            <rect key="frame" x="81" y="295" width="159" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                             <state key="normal" title="显示所有联系人"/>
                                             <connections>
                                                 <segue destination="8g4-Tc-pKW" kind="modal" id="nxJ-bX-Q0H"/>
                                             </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Kkl-Av-K61">
+                                            <rect key="frame" x="102" y="230" width="117" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            <state key="normal" title="编辑联系人"/>
+                                            <connections>
+                                                <segue destination="txY-yI-bEZ" kind="modal" id="ODi-FX-qAc"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="phO-5r-myL">
+                                            <rect key="frame" x="8" y="404" width="75" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="YourPhone"/>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.52335383310000005" green="0.90815199609999997" blue="0.75797579690000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -145,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="406"/>
+            <point key="canvasLocation" x="148" y="1035"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hPV-Jx-MUF">
@@ -180,25 +194,19 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tn7-rW-isj">
-                                            <rect key="frame" x="26" y="194" width="61" height="21"/>
+                                            <rect key="frame" x="204" y="126" width="61" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wuL-dP-0II">
-                                            <rect key="frame" x="34" y="101" width="43" height="21"/>
+                                            <rect key="frame" x="213" y="26" width="43" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="BCs-Kr-Nxz">
-                                            <rect key="frame" x="139" y="190" width="135" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HPt-4L-8d5">
                                             <rect key="frame" x="274" y="404" width="30" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -208,19 +216,35 @@
                                             </connections>
                                         </button>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="w5N-hi-Ik2">
-                                            <rect key="frame" x="139" y="97" width="135" height="30"/>
+                                            <rect key="frame" x="176" y="66" width="117" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9d0-DD-Fa0">
-                                            <rect key="frame" x="123" y="308" width="75" height="34"/>
+                                            <rect key="frame" x="123" y="308" width="78" height="34"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <state key="normal" title="戳我保存"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <state key="normal" title="点我保存"/>
                                             <connections>
                                                 <action selector="saveUrers:" destination="BGm-7x-N8m" eventType="touchUpInside" id="bse-nX-Dv6"/>
+                                                <segue destination="BGm-7x-N8m" kind="modal" id="ea4-3V-iSJ"/>
                                             </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="970c69cb0a46f21f34580d6df5246b600d33aee2.jpg" id="15v-9y-fk2">
+                                            <rect key="frame" x="15" y="26" width="143" height="174"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="BCs-Kr-Nxz">
+                                            <rect key="frame" x="176" y="170" width="117" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IZW-df-c3y">
+                                            <rect key="frame" x="8" y="404" width="75" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="YourPhone"/>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.52335383310000005" green="0.90815199609999997" blue="0.75797579690000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -316,6 +340,11 @@
                                                 <action selector="lookoutByNAME:" destination="bpV-u7-zXr" eventType="touchUpInside" id="zks-mt-IDV"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zh0-S1-IhM">
+                                            <rect key="frame" x="8" y="394" width="75" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="YourPhone"/>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.52335383310000005" green="0.90815199609999997" blue="0.75797579690000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
@@ -385,6 +414,7 @@
                                             <state key="normal" title="按姓名删除"/>
                                             <connections>
                                                 <action selector="deletByNAME:" destination="3iO-ut-Yhm" eventType="touchUpInside" id="Qon-x3-DC2"/>
+                                                <segue destination="3iO-ut-Yhm" kind="modal" id="u7X-K1-6sQ"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ii8-0W-3F3">
@@ -394,6 +424,7 @@
                                             <state key="normal" title="按手机号删除"/>
                                             <connections>
                                                 <action selector="deletByPHONE:" destination="3iO-ut-Yhm" eventType="touchUpInside" id="Bm5-Wk-mtr"/>
+                                                <segue destination="3iO-ut-Yhm" kind="modal" id="rXC-go-q34"/>
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入您要删除联系人的信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xzI-fH-rOT">
@@ -403,6 +434,11 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tmD-ms-hW8">
+                                            <rect key="frame" x="8" y="401" width="75" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="YourPhone"/>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.52335383310000005" green="0.90815199609999997" blue="0.75797579690000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
@@ -483,7 +519,13 @@
                                             </state>
                                             <connections>
                                                 <action selector="deletALL:" destination="8g4-Tc-pKW" eventType="touchUpInside" id="6VI-GC-y1w"/>
+                                                <segue destination="8g4-Tc-pKW" kind="modal" id="5NV-O2-Pga"/>
                                             </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4bJ-tR-wW4">
+                                            <rect key="frame" x="8" y="401" width="75" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="YourPhone"/>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.52335383310000005" green="0.90815199609999997" blue="0.75797579690000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -498,12 +540,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="760-tx-oAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="1035"/>
+            <point key="canvasLocation" x="535" y="2316"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit-->
         <scene sceneID="JyJ-DG-Aq4">
             <objects>
-                <viewController id="txY-yI-bEZ" sceneMemberID="viewController">
+                <viewController id="txY-yI-bEZ" customClass="Edit" customModule="D08swift_address_list_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MQb-Pd-5bm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -514,6 +556,14 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Gh-BZ-0pb" id="k90-De-MXX">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Address List" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="FWP-bI-vYp">
+                                            <rect key="frame" x="110" y="50" width="101" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
                                     <color key="backgroundColor" red="0.76545599630000005" green="1" blue="0.95386935709999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -523,19 +573,85 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7xx-0p-08n" id="su0-Bc-4oP">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="439"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cRl-kv-nQZ">
+                                            <rect key="frame" x="213" y="22" width="44" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="rO6-K8-V2u">
+                                            <rect key="frame" x="181" y="164" width="109" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kR4-xS-8MF">
+                                            <rect key="frame" x="274" y="401" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="返回"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="modal" id="yqg-P5-7dx"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wK1-Mq-Sba">
+                                            <rect key="frame" x="205" y="124" width="61" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="xe7-6K-ldK">
+                                            <rect key="frame" x="181" y="64" width="109" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lti-7Q-1iQ">
+                                            <rect key="frame" x="109" y="303" width="102" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <state key="normal" title="确定保存？"/>
+                                            <connections>
+                                                <action selector="eSAVE:" destination="txY-yI-bEZ" eventType="touchUpInside" id="jea-LW-Usq"/>
+                                                <segue destination="txY-yI-bEZ" kind="modal" id="fNi-ik-04f"/>
+                                            </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="970c69cb0a46f21f34580d6df5246b600d33aee2.jpg" id="Sky-Nj-Igp">
+                                            <rect key="frame" x="17" y="22" width="141" height="172"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y4i-KF-22C">
+                                            <rect key="frame" x="8" y="401" width="75" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="YourPhone"/>
+                                        </button>
+                                    </subviews>
                                     <color key="backgroundColor" red="0.52335383310000005" green="0.90815199609999997" blue="0.75797579690000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="eMOBILE" destination="rO6-K8-V2u" id="gvy-w4-eQS"/>
+                        <outlet property="eNAME" destination="xe7-6K-ldK" id="wXf-xL-p1a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9l-SN-Lhq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="-228"/>
+            <point key="canvasLocation" x="535" y="1679"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="970c69cb0a46f21f34580d6df5246b600d33aee2.jpg" width="378" height="390"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NgV-ls-cj0"/>
+        <segue reference="Ce2-Bx-N65"/>
+        <segue reference="ODi-FX-qAc"/>
+        <segue reference="nxJ-bX-Q0H"/>
+        <segue reference="HKg-hg-JOp"/>
+        <segue reference="LJg-ED-klt"/>
     </inferredMetricsTieBreakers>
 </document>
